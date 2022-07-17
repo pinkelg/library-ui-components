@@ -3,7 +3,7 @@ import format from 'date-fns/format';
 
 const DATE_TIME = format(new Date(), 'yyyy-MM-dd HH:MM:ss');
 
-class Logger {
+class Loggers {
   static trace = console.trace.bind(window.console, `TRACE - ${DATE_TIME} -`);
 
   static info = console.info.bind(window.console, `INFO - ${DATE_TIME} -`);
@@ -15,4 +15,4 @@ class Logger {
   static error = console.error.bind(window.console, `ERROR - ${DATE_TIME} -`);
 }
 
-export { Logger };
+export { Loggers };
